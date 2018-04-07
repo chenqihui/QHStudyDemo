@@ -17,6 +17,10 @@
 		7424985F2078724300CD1BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7424985E2078724300CD1BB2 /* Assets.xcassets */; };
 		742498622078724300CD1BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742498602078724300CD1BB2 /* LaunchScreen.storyboard */; };
 		742498652078724300CD1BB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 742498642078724300CD1BB2 /* main.m */; };
+		7424986E2078737E00CD1BB2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7424986D2078737E00CD1BB2 /* Person.m */; };
+		742498722078771100CD1BB2 /* SectionOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742498712078771100CD1BB2 /* SectionOneViewController.m */; };
+		7424987620787A7000CD1BB2 /* SectionTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7424987520787A7000CD1BB2 /* SectionTwoViewController.m */; };
+		74DB02FA207897D600A8AB9A /* Tom.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DB02F9207897D600A8AB9A /* Tom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		742498612078724300CD1BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		742498632078724300CD1BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		742498642078724300CD1BB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7424986C2078737E00CD1BB2 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7424986D2078737E00CD1BB2 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		742498702078771100CD1BB2 /* SectionOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionOneViewController.h; sourceTree = "<group>"; };
+		742498712078771100CD1BB2 /* SectionOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionOneViewController.m; sourceTree = "<group>"; };
+		7424987420787A7000CD1BB2 /* SectionTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionTwoViewController.h; sourceTree = "<group>"; };
+		7424987520787A7000CD1BB2 /* SectionTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionTwoViewController.m; sourceTree = "<group>"; };
+		74DB02F8207897D600A8AB9A /* Tom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tom.h; sourceTree = "<group>"; };
+		74DB02F9207897D600A8AB9A /* Tom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 		742498472078724300CD1BB2 /* QHStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7424986B2078735B00CD1BB2 /* Runtime */,
 				742498482078724300CD1BB2 /* AppDelegate.h */,
 				742498492078724300CD1BB2 /* AppDelegate.m */,
 				742498582078724300CD1BB2 /* ViewController.h */,
@@ -103,6 +116,37 @@
 				742498562078724300CD1BB2 /* QHTableSubViewController.xib */,
 			);
 			name = QHTableSubController;
+			sourceTree = "<group>";
+		};
+		7424986B2078735B00CD1BB2 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				742498732078772700CD1BB2 /* Model */,
+				7424986F207876C600CD1BB2 /* VC */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		7424986F207876C600CD1BB2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				742498702078771100CD1BB2 /* SectionOneViewController.h */,
+				742498712078771100CD1BB2 /* SectionOneViewController.m */,
+				7424987420787A7000CD1BB2 /* SectionTwoViewController.h */,
+				7424987520787A7000CD1BB2 /* SectionTwoViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		742498732078772700CD1BB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7424986C2078737E00CD1BB2 /* Person.h */,
+				7424986D2078737E00CD1BB2 /* Person.m */,
+				74DB02F8207897D600A8AB9A /* Tom.h */,
+				74DB02F9207897D600A8AB9A /* Tom.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +223,10 @@
 			files = (
 				742498512078724300CD1BB2 /* QHDetailRootViewController.m in Sources */,
 				7424984E2078724300CD1BB2 /* QHTableRootViewController.m in Sources */,
+				74DB02FA207897D600A8AB9A /* Tom.m in Sources */,
+				7424986E2078737E00CD1BB2 /* Person.m in Sources */,
+				7424987620787A7000CD1BB2 /* SectionTwoViewController.m in Sources */,
+				742498722078771100CD1BB2 /* SectionOneViewController.m in Sources */,
 				7424984A2078724300CD1BB2 /* AppDelegate.m in Sources */,
 				742498552078724300CD1BB2 /* QHTableSubViewController.m in Sources */,
 				742498652078724300CD1BB2 /* main.m in Sources */,

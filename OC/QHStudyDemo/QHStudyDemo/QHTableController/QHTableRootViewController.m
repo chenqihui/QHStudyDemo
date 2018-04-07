@@ -11,6 +11,9 @@
 #import "QHDetailRootViewController.h"
 #import "QHTableSubViewController.h"
 
+#import "SectionOneViewController.h"
+#import "SectionTwoViewController.h"
+
 @interface QHTableRootViewController ()
 
 @property (nonatomic, strong) NSMutableArray *arData;
@@ -22,7 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *array = @[@"1", @"QHTableSubViewController", @"3"];
+    NSArray *array = @[@"runtime section one",
+                       @"runtime section two"];
     self.arData = [NSMutableArray arrayWithArray:array];
 }
 
@@ -57,8 +61,11 @@
     NSString *title = self.arData[indexPath.row];
     
     UIViewController *subVC = nil;
-    if ([title isEqualToString:@"QHTableSubViewController"]) {
-        subVC = [[QHTableSubViewController alloc] init];
+    if ([title isEqualToString:@"runtime section one"]) {
+        subVC = [[SectionOneViewController alloc] init];
+    }
+    else if ([title isEqualToString:@"runtime section two"]) {
+        subVC = [[SectionTwoViewController alloc] init];
     }
     else {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
